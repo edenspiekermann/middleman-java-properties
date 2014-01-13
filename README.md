@@ -1,6 +1,6 @@
 # Middleman::Java::Properties
 
-TODO: Write a gem description
+Adds support to parse Java property files in a Middleman project
 
 ## Installation
 
@@ -22,7 +22,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/middleman-java-properties/fork )
+1. Fork it ( http://github.com/edenspiekermann/middleman-java-properties/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
