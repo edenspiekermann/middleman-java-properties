@@ -27,7 +27,6 @@ activate :java_properties, :properties_dir => 'path/to/your/properties'
 
 The extension provides a Middleman helper to load a property file.
 
-
     @properties = load_property_file( file_name )
 
 
