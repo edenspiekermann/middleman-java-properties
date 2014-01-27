@@ -17,7 +17,7 @@ And then execute:
 
 Activate the extension in your config.rb. You can pass as option the location of the folder containing your property files (default: "properties").
 
-activate :java_properties, :properties_dir => 'path/to/your/properties'
+    activate :java_properties, :properties_dir => 'path/to/your/properties'
 
 ## Usage
 
