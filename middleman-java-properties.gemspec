@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["r.bausek@de.edenspiekermann.com"]
   spec.summary       = %q{Adds support for Java property files in Middleman}
   spec.description   = %q{Adds support for Java property files in Middleman}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/edenspiekermann/middleman-java-properties"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
