@@ -9,15 +9,11 @@ This extension is still work in progress and not yet well tested. Use on your ow
 
 Add this line to your application's Gemfile:
 
-    gem 'middleman-java-properties'
+    gem "middleman-java-properties", :github => "edenspiekermann/middleman-java-properties"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install middleman-java-properties
 
 Activate the extension in your config.rb. You can pass as option the location of the folder containing your property files (default: "properties").
 
