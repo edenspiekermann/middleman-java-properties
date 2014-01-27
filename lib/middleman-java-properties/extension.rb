@@ -1,25 +1,30 @@
 require "middleman-java-properties/version"
-require "middleman-java-properties/properties"
+require 'java_properties'
 
 
 module Middleman
   module JavaProperties
     class << self
-      load_path = []
+
       def registered(app, options={})
-        puts 'JavaProperties registered'
+        #puts 'JavaProperties registered'
         options[:properties_dir] ||= 'properties'
-        puts options.to_s
 
         #set default directory if not set
         app.set :properties_dir, options[:properties_dir]
-        #configure load path
-        app.after_configuration do
-          load_path = Dir[File.join(root, properties_dir, "*.properties")]
-        end
+        app.helpers Helpers
       end
 
       alias :included :registered
+
+      module Helpers
+        def load_property_file(file_name)
+          properties = nil
+          file_path = File.join(root, properties_dir, file_name)
+          properties = ::JavaProperties::Properties.new(file_path)
+        end
+
+      end
     end
   end
 end
